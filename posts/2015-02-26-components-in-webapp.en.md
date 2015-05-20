@@ -12,15 +12,20 @@ To componentize a web application is a very complicated topic.
 In large scale software development, componentization is a common view, on one hand, it speeds up the developing efficiency, on the other hand, it reduces the maintaince cost.
 
 前端圈最热衷于造轮子了，没有哪个别的领域能出现这么混乱而欣欣向荣的景象。这一方面说明前端领域的创造力很旺盛，另一方面却说明了基础设施是不完善的。
-The whole front-end community are really enthusiastic about re-inventing the wheel, there is no other domain 
+The whole front-end community are really enthusiastic about re-inventing the wheel, there is no other domain that can be such a chaos but flourishing scene. It reflects that front-end community are always good at innovation, but also tells us the infrastructure still needs improvement.
 
 我曾经有过这么一个类比，说明某种编程技术及其生态发展的几个阶段：
+I used to use an analogy as below to illustrate one programming technique and the several phases through it's developing flow:
 
 - 最初的时候人们忙着补全各种API，代表着他们拥有的东西还很匮乏，需要在语言跟基础设施上继续完善
+- At first people were busy completing different kinds of APIs, which means they were lacking of lots of features, therefore they needed to continuously improve the infrastructure. 
 - 然后就开始各种模式，标志他们做的东西逐渐变大变复杂，需要更好的组织了
+- Then there emerged bunches of different patterns, which means their products was getting bigger and more complex, thus need to be better organized.
 - 然后就是各类分层MVC，MVP，MVVM之类，可视化开发，自动化测试，团队协同系统等等，说明重视生产效率了，也就是所谓工程化
+- And later, different kinds of hierarchical MVC, MVP, MVVM frameworks, visiual development, automatically testing, team cooperation systems, etc. started coming into our sight, which showed that people started to take production efficiency into count, aka engineering.  
 
 那么，对比这三个阶段，看看关注这三种东西的人数，觉得Web发展到哪一步了？
+So, comparing the three phases and the number of people focusing on them, what phase do you think the Web is at today?
 
 细节来说，大概是模块化和组件化标准即将大规模落地（好坏先不论），各类API也大致齐备了，终于看到起飞的希望了，各种框架几年内会有非常强力的洗牌，如果不考虑老旧浏览器的拖累，这个洗牌过程将大大加速，然后才能释放Web前端的产能。
 
