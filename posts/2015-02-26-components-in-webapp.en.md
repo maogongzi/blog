@@ -1,3 +1,4 @@
+The way to achieve componentization in front-end in 2015
 2015前端组件化框架之路
 ====
 
