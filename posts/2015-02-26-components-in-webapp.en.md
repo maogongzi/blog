@@ -3,12 +3,16 @@ The way to achieve componentization in front-end in 2015
 ====
 
 # 1. 为什么组件化这么难做
+# 1. Why is it so hard to achieve componentization 
 
 Web应用的组件化是一个很复杂的话题。
+To componentize a web application is a very complicated topic.
 
 在大型软件中，组件化是一种共识，它一方面提高了开发效率，另一方面降低了维护成本。但是在Web前端这个领域，并没有很通用的组件模式，因为缺少一个大家都能认同的实现方式，所以很多框架/库都实现了自己的组件化方式。
+In large scale software development, componentization is a common view, on one hand, it speeds up the developing efficiency, on the other hand, it reduces the maintaince cost.
 
 前端圈最热衷于造轮子了，没有哪个别的领域能出现这么混乱而欣欣向荣的景象。这一方面说明前端领域的创造力很旺盛，另一方面却说明了基础设施是不完善的。
+The whole front-end community are really enthusiastic about re-inventing the wheel, there is no other domain 
 
 我曾经有过这么一个类比，说明某种编程技术及其生态发展的几个阶段：
 
