@@ -28,14 +28,19 @@ I used to use an analogy as below to illustrate one programming technique and th
 So, comparing the three phases and the number of people focusing on them, what phase do you think the Web is at today?
 
 细节来说，大概是模块化和组件化标准即将大规模落地（好坏先不论），各类API也大致齐备了，终于看到起飞的希望了，各种框架几年内会有非常强力的洗牌，如果不考虑老旧浏览器的拖累，这个洗牌过程将大大加速，然后才能释放Web前端的产能。
+To be more specific, we can say that the standards for modularization and componentization are going to be settled(taking no account of whether it's good or bad), various kinds of APIs are almost ready and we can finally see that our plane is ready for it's first trip now. In a few years, different kinds of frameworks will have to face a drastically competition, without consiering the old and outdated browsers the shuffling process will be speeded up quite a lot, since then the productivity of Web front-end will be freed accordingly. 
 
 但是我们必须注意到，现在这些即将普及的标准，很多都会给之前的工作带来改变。用工业体系的发展史来对比，前端领域目前正处于蒸汽机发明之前，早期机械（比如《木兰辞》里面的机杼，主要是动力与材料比较原始）已经普及的这么一个阶段。
+But we may also have to notice that most of those standards which are going to be widely accepted will change our previous workflow. Comparing it with the developing history of industry system, the front-end domain is now right before the inventing of steam engine, but after the time that the early simple machines set were widely used.
 
 所以，从这个角度看，很多框架/库是会消亡的（专门做模块化的AMD和CMD相关库，专注于标准化DOM选择器铺垫的某些库），一些则必须进行革新，还有一些受的影响会比较小（数据可视化等相关方向），可以有机会沿着自己的方向继续演进。
+From this perspective we can see that many frameworks/liberaries will finally die out(like those AMD or CMD related liberaries which are dedicated in modularization, or some others dedicated in providing polyfills for standardizing DOM selectors), while some others will have to innovate themselves, and the left ones won't be affected much so that they have a chance to evolve along their own directions.
 
 # 2. 标准的变革
+2. The innovation of standards.
 
 对于这类东西来说，能获得广泛群众基础的关键在于：对将来的标准有怎样的迎合程度。对前端编程方式可能造成重大影响的标准有这些：
+The key point for those players to get as much support as they can from the wide mass lies in the way how they embrace the future standards.
 
 - module
 - Web Components
