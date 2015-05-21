@@ -49,23 +49,34 @@ The key point for those players to get as much support as they can from the wide
 - promise
 
 module的问题很好理解，JavaScript第一次有了语言上的模块机制，而Web Components则是约定了基于泛HTML体系构建组件库的方式，class增强了编程体验，observe提供了数据和展现分离的一种优秀方式，promise则是目前前端最流行的异步编程方式。
+The issue about module is fairly easy to understand, JavaScript gets module mechanism at the language level for the first time, while Web Components provides a way to build components library based on generic HTML system, class enhances programming experience, observer provides an excellent way for splitting data from presentation, promise is now the most popular asynchronous programming way.
 
 这里面只有两个东西是绕不过去的，一是module，一是Web Components。前者是模块化基础，后者是组件化的基础。
+There are two parts that we can't simply bypass, one is module, the other is Web Components. The former is the basis to achieve modularization, the latter is the basis to achieve componentization.
 
 module的标准化，主要影响的是一些AMD/CMD的加载和相关管理系统，从这个角度来看，正如seajs团队的@afc163 所说，不管是AMD还是CMD，都过时了。
+The standardization of module will mainly produce an effect on some AMD/CMD resource loading and management systems, from this perspective, just as the member @afc163 from seajs team said, "they are all outdated".
 
 模块化相对来说，迁移还比较容易，基本只是纯逻辑的包装，跟AMD或者CMD相比，包装形式有所变化，但组件化就是个比较棘手的问题了。
+Relatively speaking, it's easy to migrate those module implementations, there are just tasks about wrapping up the pure logic parts, compared to AMD or CMD, the package form needs to be changed a bit, but componentization is completely a challengeable task.
 
 Web Components提供了一种组件化的推荐方式，具体来说，就是：
+Web Components provides a recommended way to achieve componentization, to be more specific, it will be:
 
 - 通过shadow DOM封装组件的内部结构
+- encapsulate the component's inner structure through shadow DOM
 - 通过Custom Element对外提供组件的标签
+- expose the component's tag through Custom Element
 - 通过Template Element定义组件的HTML模板
+- define HTML template for the component through Template Element
 - 通过HTML imports控制组件的依赖加载
+- control the dependency of the loading flow through HTML imports
 
 这几种东西，会对现有的各种前端框架/库产生很巨大的影响：
+These things mentioned above will have a significant impact on all the existing front-end frameworks/libraries:
 
 - 由于shadow DOM的出现，组件的内部实现隐藏性更好了，每个组件更加独立，但是这使得CSS变得很破碎，LESS和SASS这样的样式框架面临重大挑战。
+- due to the appearance of shadow DOM, 
 - 因为组件的隔离，每个组件内部的DOM复杂度降低了，所以选择器大多数情况下可以限制在组件内部了，常规选择器的复杂度降低，这会导致人们对jQuery的依赖下降。
 - 又因为组件的隔离性加强，致力于建立前端组件化开发方式的各种框架/库（除Polymer外），在自己的组件实现方式与标准Web Components的结合，组件之间数据模型的同步等问题上，都遇到了不同寻常的挑战。
 - HTML imports和新的组件封装方式的使用，会导致之前常用的以JavaScript为主体的各类组件定义方式处境尴尬，它们的依赖、加载，都面临了新的挑战，而由于全局作用域的弱化，请求的合并变得困难得多。
