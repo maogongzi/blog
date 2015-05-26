@@ -76,14 +76,19 @@ Web Components provides a recommended way to achieve componentization, to be mor
 These things mentioned above will have a significant impact on all the existing front-end frameworks/libraries:
 
 - 由于shadow DOM的出现，组件的内部实现隐藏性更好了，每个组件更加独立，但是这使得CSS变得很破碎，LESS和SASS这样的样式框架面临重大挑战。
-- due to the appearance of shadow DOM, 
+- due to the appearance of shadow DOM, it becomes much easier to hide the details inside the component, each component becomes more independent, but it also make CSS more fragile, style frameworks like LESS and SASS will have to face a great challenge. 
 - 因为组件的隔离，每个组件内部的DOM复杂度降低了，所以选择器大多数情况下可以限制在组件内部了，常规选择器的复杂度降低，这会导致人们对jQuery的依赖下降。
+- due to isolation between different components, DOM complexity inside each component is reduced, hence selectors can be restricted inside the componentitself in most cases, and it will lead to a decrease of dependency on jQuery.
 - 又因为组件的隔离性加强，致力于建立前端组件化开发方式的各种框架/库（除Polymer外），在自己的组件实现方式与标准Web Components的结合，组件之间数据模型的同步等问题上，都遇到了不同寻常的挑战。
+- also, since the isolation between different components is intensified, those different kinds of frameworks/libraries(except Polymer) which devote to build a standard of front-end componentization developing flow will face a difficult challenge on problems about incorporating the standard Web Components way and their own implementation ways and problems about synchornizating data models among different components.
 - HTML imports和新的组件封装方式的使用，会导致之前常用的以JavaScript为主体的各类组件定义方式处境尴尬，它们的依赖、加载，都面临了新的挑战，而由于全局作用域的弱化，请求的合并变得困难得多。
+- The use of HTML imports and new component encapsulating ways will place those former kinds of component definition ways which focus on JavaScript into an embarrasing situration, because their dependencies management and loading flow all have to face new challenges, besides, the weakening of global scope will make it much harder to combine different requests. 
 
 # 3. 当下最时髦的前端组件化框架/库
+# 3. the most popular front-end componentization frameworks/libraries
 
 在2015年初这个时间点看，前端领域有三个框架/库引领时尚，那就是Angular，Polymer，React（排名按照首字母），在知乎的这篇[2014 年末有哪些比较火的 Web 开发技术？](http://www.zhihu.com/question/26644904/answer/33634518)里，我大致回答过一些点，其他几位朋友的答案也很值得看。关于这三者的细节分析，**侯振宇**的这篇讲得很好：[2015前端框架何去何从](http://www.cnblogs.com/sskyy/p/4264371.html)
+When we start our reviewing from the beginning of the year 2015, there were three frameworks/libraries which leading the trends, which were Angular, Polymer and React(sorting in alphabetical order), in the post on Zhihu(a Chinese version of Quora, mainly use Mandarin language)[What kind of popular Web developing techinques are there at the end of the year 2014?](http://www.zhihu.com/question/26644904/answer/33634518), I roughly gave some opinions in my answer, also there were some other answers from
 
 我们可以看到，Polymer这个东西在这方面是有先天优势的，因为它的核心理念就是基于Web Components的，也就是说，它基本没有考虑如何解决当前的问题，直接以未来为发展方向了。
 
