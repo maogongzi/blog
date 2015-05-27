@@ -91,27 +91,40 @@ These things mentioned above will have a significant impact on all the existing 
 When we start our reviewing from the beginning of the year 2015, there were three frameworks/libraries which leading the trends, which were Angular, Polymer and React(sorting in alphabetical order), in the post on Zhihu(a Chinese version of Quora, mainly use Mandarin language)[What kind of popular Web developing techinques are there at the end of the year 2014?](http://www.zhihu.com/question/26644904/answer/33634518), I roughly gave some opinions in my answer, also there were some other answers from
 
 我们可以看到，Polymer这个东西在这方面是有先天优势的，因为它的核心理念就是基于Web Components的，也就是说，它基本没有考虑如何解决当前的问题，直接以未来为发展方向了。
+We can find that Polymer has it's inherent advantanges since it's core idea is based on Web Components, which means it never considers how to solve the problems happening currently, but focus directly on the future instead.
 
 React的编程模式其实不必特别考虑Web标准，它的迁移成本并不算高，甚至由于其实现机制，屏蔽了UI层实现方式，所以大家能看到在native上的使用，canvas上的使用，这都是与基于DOM的编程方式大为不同的，所以对它来说，处理Web Components的兼容问题要在封装标签的时候解决，反正之前也是要封装。
+The programming patterns Reach is using actually doesn't need to specially take Web standards into consideration, it doesn't cost much to migrate from it, whats more, due to it's mechanism of implementation which blocks the implementation on UI layer, we can see it's usage in native environment and on canvas, which are significantly different from the programming way based on DOM, to it, the compatibility problems related to Web Components  must be solved at the time of encapsulating tags, anyway we still need to encapsulate it. 
 
 Angular 1.x的版本，可以说是跟同时代的多数框架/库一样，对未来标准的兼容基本没有考虑，但是重新规划之后的2.0版本对此有了很多权衡，变成了激进变更，突然就变成一个未来的东西了。
+Angular 1.x series, so to speak, didn't consider forward compatibility with future standards as it's contemporary peer frameworks/libraries.
 
 这三个东西各有千秋，在可以预见的几年内将会鼎足三分，也许还会有新的框架出现，能不能比这几个流行就难说了。
+These three things each has its own advantages, and will be in a three-way race in the foreseeable following years, probably there will be some new frameworks appear, but it's hard to know if they will become more popular then the three ones. 
 
 此外，原Angular 2.0的成员Rob Eisenberg创建了自己的新一代框架[aurelia](http://aurelia.io/)，该框架将成为Angular 2.0强有力的竞争者。
+Besides, one of the former members of Angular 2.0, Rob Eisenberg, has made his own new framework[aurelia](http://aurelia.io/), which will become a strong competitor to Angular 2.0.
 
 # 4. 前端组件的复用性
+# 4. The reusability of front-end components
 
 看过了已有的一些东西之后，我们可以大致来讨论一下前端组件化的一些理念。假设我们有了某种底层的组件机制，先不管它是浏览器原生的，或者是某种框架/库实现的约定，现在打算用它来做一个大型的Web应用，应该怎么做呢？
+We have seen some already existing projects, now we can have a roughly discussion on some ideas about front-end componentization. Suppose we already have some kind of low-level componentization mechanism, no matter if it's native in the browser or a kind of convention in one framework/library, what should we do if we want to build a large scale Web application with it?
 
 所谓组件化，核心意义莫过于提取真正有复用价值的东西。那怎样的东西有复用价值呢？
+One of the kernel ideas of the so-called componentization is to extract the valuable reusable parts. Then what kind of parts have the value to be reusable?
 
 - 控件
+- Controls
 - 基础逻辑功能
+- The basic logic functionities
 - 公共样式
+- Public styles
 - 稳定的业务逻辑
+- The stable business logics
 
 对于控件的可复用性，基本上是没有争议的，因为这是实实在在的通用功能，并且比较独立。
+There is rarely controversy on the reusability of Controls, because it's
 
 基础逻辑功能主要指的是一些与界面无关的东西，比如underscore这样的辅助库，或者一些校验等等纯逻辑功能。
 
