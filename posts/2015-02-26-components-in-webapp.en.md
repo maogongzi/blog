@@ -124,13 +124,17 @@ One of the kernel ideas of the so-called componentization is to extract the valu
 - The stable business logics
 
 对于控件的可复用性，基本上是没有争议的，因为这是实实在在的通用功能，并且比较独立。
-There is rarely controversy on the reusability of Controls, because it's
+There are rarely issues on the reusability of Controls, because it's real general function and exists independently.
 
 基础逻辑功能主要指的是一些与界面无关的东西，比如underscore这样的辅助库，或者一些校验等等纯逻辑功能。
+The basic logic function sets typically refer to things which are not related to UI, such as helper libraries like underscore, or some pure logic functions like verification.
+
 
 公共样式的复用性也是比较容易认可的，因此也会有bootstrap，foundation，semantic这些东西的流行，不过它们也不是纯粹的样式库了，也带有一些小的逻辑封装。
+It's easily to understand the reusability of public styles, thus frameworks like bootstrap，foundation，semantic are getting popular, but they are not pure styles libraries since they have encapsulated some tiny logic pieces.
 
-最后一块，也就是业务逻辑。这一块的复用是存在很多争议的，一方面是，很多人不认同业务逻辑也需要组件化，另一方面，这块东西究竟怎样去组件化，也很需要思考。
+最后一块，也就是业务逻辑。这一块的复用是存在很多争议的，一方面是，很多人不认同业务逻辑也需要组件化，另一方面，这块东西究竟怎样去组件化，也很需要思考。The last topic, i.e. business logic, 
+there are a lot of issues in how to achieve reusability for it, on one hand, someone don't agree that we should componentize business logic, on the other hand, it's interesting and valuable to think about how to achieve componentization for it.
 
 除了上面列出的这些之外，还有大量的业务界面，这块东西很显然复用价值很低，基本不存在复用性，但仍然有很多方案中把它们“组件化”了，使得它们成为了“不具有复用性的组件”。为什么会出现这种情况呢？
 
